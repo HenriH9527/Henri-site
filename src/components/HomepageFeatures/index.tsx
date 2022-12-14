@@ -95,7 +95,7 @@ export default function HomepageFeatures(): JSX.Element {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <Row>
+        {/* <Row>
           <Col span={24}>
           <Popconfirm placement="topLeft" title={'你真的是呆呆的笨笨嘛？'} onCancel={() => message.warning('给你两巴掌!')} onConfirm={confirm} okText="那可不" cancelText="滚滚滚">
               <Button type='primary'>如果是笨笨，请点击这里😈</Button>
@@ -115,7 +115,7 @@ export default function HomepageFeatures(): JSX.Element {
             </Drawer>
           </Drawer>
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </section>
   );
