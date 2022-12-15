@@ -20,7 +20,7 @@ jobs:
         CI: true
     - name: Deploy to Server # 将打包内容发布到 对应环境
       uses: easingthemes/ssh-deploy@v2.1.5
-      env:
+      with:
         # 本地.ssh文件下的私钥id_rsa, 存在secrets的token中
         SSH_PRIVATE_KEY: ${{ secrets.TOKEN }}
         # 复制操作的参数 “-aczr --delete” 意味部署时清空服务器目标目录下的文件
